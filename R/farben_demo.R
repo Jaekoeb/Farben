@@ -27,6 +27,11 @@ farben_demo <- function(color, include = "all", bg = "white") {
     stop("Too many colors given")
   }
 
+
+  if (!(include %in% c("line", "scatter", "bar", "all"))) {
+    stop("Invalid input for `include`")
+  }
+
   # Helper: draw legend in the top left corner of the current plot region
   draw_legend <- function() {
     legend("topleft",

@@ -14,8 +14,16 @@
 farben <- function(colors){
 
   # Check if input is a character vector
-  if (!is.character(colors)) {
+  if (!all(is.character(colors))) {
     stop("Input must be a character vector.")
+  }
+
+
+  # Additional check to catch cases like farben(c("red", 1))
+  # If any element can be coerced to a number (i.e. "1") without resulting in NA,
+  # then the user probably supplied a numeric value.
+  if (any(!is.na(suppressWarnings(as.numeric(colors))))) {
+    stop("Input must be a character vector of valid color names or hex codes; numeric values are not allowed.")
   }
 
 

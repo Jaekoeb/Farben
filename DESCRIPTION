@@ -1,14 +1,22 @@
 Package: Farben
-Title: Adds several color palettes as well as functions to manipulate and visualize colors.
-Version: 0.0.0.9000
+Title: My personal color package
+Version: 0.1.0
 Authors@R: 
     person("Jakob", "Pertl", , "pertl.jakob@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: lorem ipsum
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: This is a personal project to save my favourite colors. I define an S3 colors class and add some methods too.
+License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.0
+RoxygenNote: 7.3.2
 URL: https://github.com/Jaekoeb/Farben
 BugReports: https://github.com/Jaekoeb/Farben/issues
+Collate: 
+    'constr.R'
+    'basic.R'
+    'dark.R'
+    'farben_demo.R'
+    'goodbad.R'
+    'hitze.R'
+    'plot.R'
+    'plot_demo.R'

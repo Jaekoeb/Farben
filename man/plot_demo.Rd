@@ -4,10 +4,10 @@
 \alias{plot_demo}
 \title{Plot Demo}
 \usage{
-plot_demo(v.col, include = "all")
+plot_demo(color, include = "all")
 }
 \arguments{
-\item{v.col}{A vector of colors given in hex code.}
+\item{color}{A vector of colors given in hex code.}
 
 \item{include}{A character vector of which plots to include.}
 }
@@ -19,5 +19,5 @@ This function can be used to quickly asses if a color palette is useful. It retu
 three different plots from the 'ChickWeight' data set.
 }
 \examples{
-plot_demo(v.col = c("red", "blue", "yellow"))
+plot_demo(color = c("red", "blue", "yellow"))
 }

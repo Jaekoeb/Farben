@@ -6,6 +6,7 @@
 #'
 #' @return An object of class `farben`
 #' @export
+#' @importFrom grDevices col2rgb
 #'
 #' @examples
 #' farben(c("#683F8C", "#0f618a"))

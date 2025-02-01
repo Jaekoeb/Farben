@@ -7,7 +7,7 @@
 farben_demo(color, include = "all", bg = "white")
 }
 \arguments{
-\item{color}{A farben object (colors given as hex codes).}
+\item{color}{A farben object.}
 
 \item{include}{A character vector of which plots to include. Options are \code{"line"}, \code{"scatter"}, \code{"bar"},
 or \code{"all"}.}
@@ -22,7 +22,7 @@ This function can be used to quickly assess if a color palette is useful. It ret
 three different plots from the 'ChickWeight' data set.
 }
 \examples{
-# Assuming farben() creates an object of class "farben"
 col <- farben(c("red", "blue", "yellow"))
 farben_demo(color = col)
+
 }

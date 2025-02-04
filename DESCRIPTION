@@ -14,11 +14,14 @@ BugReports: https://github.com/Jaekoeb/Farben/issues
 Collate: 
     'constr.R'
     'basic.R'
-    'dark.R'
+    'blind.R'
     'farben_demo.R'
     'goodbad.R'
     'hitze.R'
     'plot.R'
+    'rainbow.R'
+    'royal.R'
+    'space.R'
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

@@ -2,6 +2,7 @@
 
 test_that("constructor works", {
 
+  pdf(NULL)  # Redirect graphical output to a null device
 
   # Contains random character
   expect_error(
@@ -66,5 +67,8 @@ test_that("farben demo works",{
 
   expect_silent(farben_demo(col_min))
   expect_silent(farben_demo(col_max))
+
+
+  dev.off() # Close NULL device
 
 })

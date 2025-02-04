@@ -3,19 +3,7 @@
 #'
 #' @include constr.R
 #'
-#' @description A basic color palette.
-#' Contains the colors:
-#' - lime
-#' - strawberry
-#' - mango
-#' - blueberry
-#' - grape
+#' @description A basic color palette. Contains 5 colors.
 #' @export basic
-basic <- farben(c(
-  `lime` = "#38a45e",
-  `strawberry` = "#e72731",
-  `mango` = "#f19d02",
-  `blueberry` = "#0f618a",
-  `grape` = "#683F8C"
-))
+basic <- farben(c("#38a45e", "#e72731", "#f19d02", "#0f618a", "#683F8C"))
 
